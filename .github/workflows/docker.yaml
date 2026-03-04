@@ -122,6 +122,6 @@ jobs:
           )
 
           # 3. 发送
-          JSON_PAYLOAD=$(jq -n --arg msg "$RAW_TEXT" '{"msg_type":"text","content":{"text":$msg}}')
+          JSON_PAYLOAD=$(jq -n --arg msg "$RAW_TEXT" '{"msgtype":"text","text":{"content":$msg}}')
           curl -X POST -H "Content-Type: application/json" -d "$JSON_PAYLOAD" "${{ secrets.WEBHOOK_URL }}"
       
