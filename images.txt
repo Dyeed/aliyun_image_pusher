@@ -1,1 +1,1 @@
-gpustack/gpustack:v2.0.3
+vllm/vllm-openai:cu130-nightly-x86_64
