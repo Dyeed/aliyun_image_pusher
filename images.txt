@@ -1,2 +1,1 @@
-vllm/vllm-openai:nightly-x86_64
-quay.io/gpustack/runner:cuda12.9-vllm0.11.2
+vllm/vllm-openai:v0.17.0
